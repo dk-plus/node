@@ -9,17 +9,17 @@
 
 ## 全局变量有哪些
 
-我们在node交互命令行里输入`global`，输出了一堆东西，但我们不难发现，global直属的属性只有process、Buffer、console、setImmeadiate、setTimeout、setInterval、clearImmeadiate、clearTimeout、clearInterval、URL、URLSearchParams。
+我们在node交互命令行里输入`global`，输出了一堆东西，但我们不难发现，global直属的属性只有process、Buffer、console、setImmediate、setTimeout、setInterval、clearImmediate、clearTimeout、clearInterval、URL、URLSearchParams。
 
 我们大致列举一下这些属性的作用：
 - `process`：提供 Node.js 进程的有关信息以及控制进程。
 - `Buffer`：用于在 TCP 流或文件系统操作等场景中处理字节流。
 - `console`：类似于 Web 浏览器提供的 JavaScript 控制台。
-- `setImmeadiate`：在 Node.js 事件循环的当前回合结束时要调用的函数。
-- `setTimeout`：
-- `setInterval`：
-- `clearImmeadiate`：
-- `clearTimeout`：
-- `clearInterval`：
-- `URL`：
-- `URLSearchParams`：
+- `setImmediate`：预定立即执行的 `callback`，它是在 I/O 事件的回调之后被触发。 返回一个用于 `clearImmediate()` 的 `Immediate`。
+- `setTimeout`：预定在 `delay` 毫秒之后执行的单次 `callback`。 返回一个用于 `clearTimeout()` 的 `Timeout`。
+- `setInterval`：预定每隔 `delay` 毫秒重复执行的 `callback`。 返回一个用于 `clearInterval()` 的 `Timeout`。
+- `clearImmediate`：取消一个由 `setImmediate()` 创建的 Immediate 对象。
+- `clearTimeout`：取消一个由 `setTimeout()` 创建的 Timeout 对象。
+- `clearInterval`：取消一个由 `setInterval()` 创建的 Timeout 对象。
+- `URL`：浏览器兼容的 `URL` 类，根据 `WHATWG URL` 标准实现。
+- `URLSearchParams`：`URLSearchParams`API接口提供对`URLquery`部分的读写权限。

@@ -2,13 +2,6 @@
 
 > path 模块是一个相对简单的模块。
 
-- [系统差异](#系统差异)
-  - [posix 和 win32](#posix 和 win32)
-  - [sep 和 delimiter](#sep 和 delimiter)
-- [format 和 parse](#format 和 parse)
-- [basename、dirname、extname](#basename、dirname、extname)
-- [绝对路径、相对路径](#绝对路径、相对路径)
-
 ## 系统差异
 
 ### posix 和 win32

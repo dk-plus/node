@@ -1,17 +1,5 @@
 # url 笔记
 
-- [url模块](#url模块)
-- [url.parse 和 URL](#url.parse 和 URL)
- - [创建的对象](#创建的对象)
- - [new URL参数](#new URL参数)
- - [对象的读写接口](#对象的读写接口)
-  - [只读字段](#只读字段)
-  - [protocol](#protocol)
-- [URLSearchParams](#URLSearchParams)
- - [new URLSearchParams构造函数](#new URLSearchParams构造函数)
- - [URLSearchParams方法](#URLSearchParams方法)
-  - [append和set](#append和set)
-
 ## url模块
 
 url模块需要`require`引入，而`url`模块下的`URL`和`URLSearchParams`则是全局变量，并且全等于`global`下的`URL`和`URLSearchParams`。
